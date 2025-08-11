@@ -1,0 +1,13 @@
+{
+  "itemGroup.ftbquestslangsplitter": "Example Mod Tab",
+  "block.ftbquestslangsplitter.example_block": "Example Block",
+  "item.ftbquestslangsplitter.example_item": "Example Item",
+
+  "ftbquestslangsplitter.configuration.title": "FTB Quests Lang Splitter Configs",
+  "ftbquestslangsplitter.configuration.section.ftbquestslangsplitter.common.toml": "FTB Quests Lang Splitter Configs",
+  "ftbquestslangsplitter.configuration.section.ftbquestslangsplitter.common.toml.title": "FTB Quests Lang Splitter Configs",
+  "ftbquestslangsplitter.configuration.items": "Item List",
+  "ftbquestslangsplitter.configuration.logDirtBlock": "Log Dirt Block",
+  "ftbquestslangsplitter.configuration.magicNumberIntroduction": "Magic Number Text",
+  "ftbquestslangsplitter.configuration.magicNumber": "Magic Number"
+}
