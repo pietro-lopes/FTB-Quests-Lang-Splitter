@@ -1,13 +1,14 @@
 {
-  "itemGroup.ftbquestslangsplitter": "Example Mod Tab",
-  "block.ftbquestslangsplitter.example_block": "Example Block",
-  "item.ftbquestslangsplitter.example_item": "Example Item",
-
   "ftbquestslangsplitter.configuration.title": "FTB Quests Lang Splitter Configs",
   "ftbquestslangsplitter.configuration.section.ftbquestslangsplitter.common.toml": "FTB Quests Lang Splitter Configs",
   "ftbquestslangsplitter.configuration.section.ftbquestslangsplitter.common.toml.title": "FTB Quests Lang Splitter Configs",
-  "ftbquestslangsplitter.configuration.items": "Item List",
-  "ftbquestslangsplitter.configuration.logDirtBlock": "Log Dirt Block",
-  "ftbquestslangsplitter.configuration.magicNumberIntroduction": "Magic Number Text",
-  "ftbquestslangsplitter.configuration.magicNumber": "Magic Number"
+  "ftbquestslangsplitter.commands.unsupported_locale": "Locale %s is not supported",
+  "ftbquestslangsplitter.commands.permission_denied": "You don't have permission to run this command",
+  "ftbquestslangsplitter.commands.lang_manager_force_saved": "Language Manager force saved",
+  "ftbquestslangsplitter.commands.added_missing_lang_entries": "Added %s missing entries to language %s",
+  "ftbquestslangsplitter.commands.no_missing_entries": "There is no missing entry on language %s",
+  "ftbquestslangsplitter.commands.lang_file_split": "Language file %s split successfully",
+	"ftbquestslangsplitter.commands.all_lang_file_split": "All Language files split successfully",
+  "ftbquestslangsplitter.commands.file_already_exists": "File at %a already exists, skipping...",
+  "ftbquestslangsplitter.commands.purged_merged_files": "Purged merged files"
 }
