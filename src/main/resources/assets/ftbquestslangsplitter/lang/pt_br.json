@@ -9,6 +9,6 @@
   "ftbquestslangsplitter.commands.no_missing_entries": "Não há registros ausentes no idioma %s",
   "ftbquestslangsplitter.commands.lang_file_split": "Arquivo de idioma %s dividido com sucesso",
   "ftbquestslangsplitter.commands.all_lang_file_split": "Todos os arquivos de idioma foram divididos com sucesso",
-  "ftbquestslangsplitter.commands.file_already_exists": "O arquivo em %a já existe, ignorando...",
+  "ftbquestslangsplitter.commands.file_already_exists": "O arquivo em %s já existe, ignorando...",
   "ftbquestslangsplitter.commands.purged_merged_files": "Arquivos mesclados foram limpos"
 }

@@ -9,6 +9,6 @@
   "ftbquestslangsplitter.commands.no_missing_entries": "There is no missing entry on language %s",
   "ftbquestslangsplitter.commands.lang_file_split": "Language file %s split successfully",
 	"ftbquestslangsplitter.commands.all_lang_file_split": "All Language files split successfully",
-  "ftbquestslangsplitter.commands.file_already_exists": "File at %a already exists, skipping...",
+  "ftbquestslangsplitter.commands.file_already_exists": "File at %s already exists, skipping...",
   "ftbquestslangsplitter.commands.purged_merged_files": "Purged merged files"
 }
