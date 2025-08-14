@@ -43,7 +43,6 @@ Fills missing lang entries based on `en_us` locale and runs the split.
 ```bash
 /langsplitter fill_missing_translation <replace_unmerged> <locale>
 ```
-You can find examples [here](https://github.com/pietro-lopes/KubeJSTweaks/tree/master/run/kubejs).
 
 - `purge_merged`
 
@@ -84,6 +83,21 @@ config/ftbquests/quests/lang/**/*.snbt_merged
   - to generate those starting files run `split` command and commit the files.
   - after the folders are set, now you can remove the original locale .snbt file (those are auto-generated now when merged from split files at runtime)
   - for now on, only accept PRs/commits that are from split files.
+
+- About the `recovery` folder:
+  - when files are merged and they replace an existing entry like when you translate again an entry, it will backup that entry at folder `recovery` containing the following:
+  - a file with name like `en_us_<timestamp>.snbt` will be generated (ie: `en_us_1755120819.snbt`)
+```json
+  {
+    "chapters/basic_armor.snbt": {
+       quest.004D61425172324F.quest_subtitle: {
+         new: "This is my new subtitle"
+         old: "This is the old subtitle"
+       }
+    }
+  }
+```
+  
 
 ## 📝 License
 
