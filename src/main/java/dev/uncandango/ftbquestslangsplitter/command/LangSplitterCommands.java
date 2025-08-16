@@ -92,6 +92,7 @@ public class LangSplitterCommands {
 			if (!targetTableMap.containsKey(id)) {
 				count.incrementAndGet();
 				targetTableMap.put(id, value);
+				FTBQuestsLangSplitter.LOGGER.debug("Added missing entry with id {}", id);
 			}
 		});
 		if (count.get() > 0) {
