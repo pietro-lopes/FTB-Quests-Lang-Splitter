@@ -104,7 +104,8 @@ configurations {
 }
 
 dependencies {
-	implementation "curse.maven:ftb-quests-forge-289412:6874989"
+	compileOnly "curse.maven:ftb-quests-forge-289412:6874989" // ftb-quests-neoforge-2101.1.14.jar
+	localRuntime "curse.maven:ftb-quests-forge-289412:6874989" // ftb-quests-neoforge-2101.1.14.jar
 	implementation "curse.maven:ftb-library-forge-404465:6874538"
 	implementation "curse.maven:ftb-teams-forge-404468:6119437"
 	implementation "curse.maven:architectury-api-419699:5786327"

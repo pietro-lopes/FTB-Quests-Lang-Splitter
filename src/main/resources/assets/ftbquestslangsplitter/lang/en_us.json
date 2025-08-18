@@ -10,5 +10,6 @@
   "ftbquestslangsplitter.commands.lang_file_split": "Language file %s split successfully",
 	"ftbquestslangsplitter.commands.all_lang_file_split": "All Language files split successfully",
   "ftbquestslangsplitter.commands.file_already_exists": "File at %s already exists, skipping...",
-  "ftbquestslangsplitter.commands.purged_merged_files": "Purged merged files"
+  "ftbquestslangsplitter.commands.purged_merged_files": "Purged merged files",
+  "ftbquestslangsplitter.split.lang_saved_reminder": "You are in edit mode and looks like a lang file was saved, remember to split it when you are fully done!"
 }
