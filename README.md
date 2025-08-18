@@ -40,13 +40,15 @@ lang/
 
 Fills missing lang entries based on `en_us` locale and runs the split.
 
+*Note: you can check at debug.log which entries were added.*
+
 ```bash
 /langsplitter fill_missing_translation <replace_unmerged> <locale>
 ```
 
 - `purge_merged`
 
-When you load or reload the quest and there are available split files to be read, they are merged into the original file and after that renamed to .snb_merged. You can use this command to purge them from the folder if you don't like seeing those.
+When you load or reload the quest and there are available split files to be read, they are merged into the original file and after that renamed to .snbt_merged. You can use this command to purge them from the folder if you don't like seeing those.
 
 ```bash
 /langsplitter purge_merged
