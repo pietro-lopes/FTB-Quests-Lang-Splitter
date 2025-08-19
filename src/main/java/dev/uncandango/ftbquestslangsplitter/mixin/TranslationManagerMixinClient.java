@@ -28,18 +28,18 @@ public abstract class TranslationManagerMixinClient {
 
 	@Inject(method = "saveToNBT", at = @At("RETURN"))
 	private void remindPlayersToSplit(Path langFolder, boolean force, CallbackInfo ci) {
-		if (!kjstweaks$updatedAny.get() || !ClientQuestFile.canClientPlayerEdit()) return;
 		var player = Minecraft.getInstance().player;
-		if (player != null) {
-			var server = ServerLifecycleHooks.getCurrentServer();
-			if (server != null && server.isSingleplayer()) {
-				var serverPlayer = server.getPlayerList().getPlayer(player.getUUID());
-				if (serverPlayer != null && PermissionsHelper.hasEditorPermission(serverPlayer, false)){
-					var message = Component.translatable("ftbquestslangsplitter.split.lang_saved_reminder").withStyle(ChatFormatting.GREEN);
-					serverPlayer.sendSystemMessage(message);
-				}
+		if (player == null) return;
+		if (!kjstweaks$updatedAny.get() || !ClientQuestFile.canClientPlayerEdit()) return;
+		var server = ServerLifecycleHooks.getCurrentServer();
+		if (server != null && server.isSingleplayer()) {
+			var serverPlayer = server.getPlayerList().getPlayer(player.getUUID());
+			if (serverPlayer != null && PermissionsHelper.hasEditorPermission(serverPlayer, false)){
+				var message = Component.translatable("ftbquestslangsplitter.split.lang_saved_reminder").withStyle(ChatFormatting.GREEN);
+				serverPlayer.sendSystemMessage(message);
 			}
 		}
+
 		kjstweaks$updatedAny.set(false);
 	}
 
