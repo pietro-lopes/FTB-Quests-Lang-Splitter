@@ -6,7 +6,7 @@ This mod adds a feature to split lang files for better version control, also add
 
 ## 📦 Installation
 
-Mod is available on [CurseForge](https://www.curseforge.com/minecraft/mc-mods/ftbquestslangsplitter).
+Mod is available on [CurseForge](https://www.curseforge.com/minecraft/mc-mods/ftb-quests-lang-splitter).
 
 ## 🔧 Features
 
