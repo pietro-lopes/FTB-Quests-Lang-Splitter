@@ -45,11 +45,6 @@ public abstract class TranslationManagerMixin {
 	private Map<String, TranslationTable> map;
 
 	@Shadow
-	private static boolean isValidLangFile(Path p) {
-		return false;
-	}
-
-	@Shadow
 	public abstract void saveToNBT(Path langFolder, boolean force);
 
 	/**
@@ -96,7 +91,7 @@ public abstract class TranslationManagerMixin {
 						}
 					}
 				} else {
-					if (isValidLangFile(path)) {
+					if (langsplitter$isValidLangFile(path)) {
 						CompoundTag langNBT = SNBT.read(path);
 						if (langNBT != null) {
 							String locale = (path.getFileName().toString().split("\\.", 2))[0].toLowerCase(Locale.ROOT);
@@ -119,7 +114,7 @@ public abstract class TranslationManagerMixin {
 
 	@Unique
 	private static void langsplitter$writeToOriginalLangFile(Path localePath,Path filePath, Map<String, TranslationTable> localeMap, String locale, CompoundTag recovery) {
-		if (isValidLangFile(filePath)) {
+		if (langsplitter$isValidLangFile(filePath)) {
 			CompoundTag langNBT = SNBT.read(filePath);
 			if (langNBT != null) {
 				TranslationTable table = localeMap.computeIfAbsent(locale, (l) -> new TranslationTable());
@@ -226,5 +221,13 @@ public abstract class TranslationManagerMixin {
 			}
 		}
 		return true;
+	}
+
+	@Unique
+	private static boolean langsplitter$isValidLangFile(Path filePath){
+		if (filePath == null || filePath.getFileName() == null) {
+			return false;
+		}
+		return filePath.getFileName().toString().toLowerCase().endsWith(".snbt");
 	}
 }
