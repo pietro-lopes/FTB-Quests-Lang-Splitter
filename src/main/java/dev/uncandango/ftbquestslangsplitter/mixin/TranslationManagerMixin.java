@@ -228,6 +228,6 @@ public abstract class TranslationManagerMixin {
 		if (filePath == null || filePath.getFileName() == null) {
 			return false;
 		}
-		return filePath.getFileName().toString().toLowerCase().endsWith(".snbt");
+		return filePath.getFileName().toString().toLowerCase(Locale.ROOT).endsWith(".snbt");
 	}
 }

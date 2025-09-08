@@ -134,7 +134,7 @@ public class LangSplitterCommands {
 				Map<Path, CompoundTag> splittedFiles = new HashMap<>();
 				((TranslationTableAccessor) table).langsplitter$getMap().forEach((id, value) -> {
 					String[] parts = id.split("\\.");
-					if (parts.length != 2) {
+					if (parts.length < 2) {
 						FTBQuestsLangSplitter.LOGGER.error("Id {} could not be split into type and code, skipping...", id);
 						return;
 					}
